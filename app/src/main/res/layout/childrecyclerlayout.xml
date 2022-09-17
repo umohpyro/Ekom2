@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_rv_child"
+    android:background="#eee"
+    android:layout_marginTop="1dp"
+    android:padding="5dp"
+    >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="200dp"
+            android:id="@+id/cv_ppix"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/profilePix"
+                android:background="@color/purple_500"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name" />
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:foreground="#12F60B"
+                android:background="@drawable/online"
+                android:id="@+id/status"
+                android:layout_gravity="top|end"
+                android:layout_margin="2dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lv_1"
+            android:layout_toEndOf="@+id/cv_ppix"
+            >
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/hghgshg_hgshhsggs"
+                android:textColor="#616161"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/_10_00pm"
+                android:textAlignment="viewEnd"
+                android:textColor="#616161"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/cv_ppix"
+        android:text="@string/app_name"
+        android:textColor="#616161" />
+
+</RelativeLayout>
